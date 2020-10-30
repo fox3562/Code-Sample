@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cont_create_name_edit">Наименование</string>
+    <string name="cont_create_type_spinner">Тим емкости</string>
+    <string name="cont_create_volume_edit">Объем емкости</string>
+    <string name="cont_create_tko_count_edit">Количество складируемых цветов</string>
+    <string name="cont_create_length_edit">Длина</string>
+    <string name="cont_create_width_edit">Ширина</string>
+    <string name="cont_create_height_edit">Высота</string>
+    <string name="cont_create_cont_type_spinner">Тип контейнера</string>
+    <string name="cont_create_weight_edit">Масса пустого контейнера</string>
+    <string name="cont_create_state_spinner">Статус емкости</string>
+    <string name="cont_create_date_start_edit">Планируемая дата размещения</string>
+    <string name="cont_create_date_end_edit">Планируемая дата прекращения</string>
+    <string name="cont_create_flowers_spinner">Тип цветов</string>
+    <string name="cont_create_trouble_switch">Аварийное состояние</string>
+    <string name="cont_create_comment_edit">Комментарий</string>
+    <string name="cont_create_count_edit">Количество емкостей</string>
+    <string name="cont_create_add_button">Добавить</string>
+</resources>

@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".ui.wh.current.WhCurrentFragment"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingStart="@dimen/screen_padding"
+        android:paddingTop="@dimen/top_screen_padding"
+        android:paddingEnd="@dimen/screen_padding"
+        android:paddingBottom="@dimen/screen_padding">
+
+        <ru.flatstack.sample.ui.views.WhButton
+            android:id="@+id/whAddressButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:textIconBtn="@string/icon_map_marker"
+            app:textTitleBtn="@string/wh_address_button" />
+
+        <ru.flatstack.sample.ui.views.WhButton
+            android:id="@+id/whParamsButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whAddressButton"
+            app:textIconBtn="@string/icon_cogs"
+            app:textTitleBtn="@string/wh_params_button" />
+
+        <ru.flatstack.sample.ui.views.WhButton
+            android:id="@+id/whContainersButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whParamsButton"
+            app:textIconBtn="@string/icon_dumpster"
+            app:textTitleBtn="@string/wh_containers_button" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/whStateSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin"
+            android:layout_marginEnd="@dimen/item_margin"
+            app:layout_constraintEnd_toStartOf="@id/whCalendarButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whContainersButton"
+            app:textTitleSpinner="@string/wh_state_spinner" />
+
+        <ru.flatstack.sample.ui.views.IconButton
+            android:id="@+id/whCalendarButton"
+            style="@style/FSTheme.ButtonPrimary"
+            android:layout_width="wrap_content"
+            android:text="@string/icon_calendar"
+            app:layout_constraintBottom_toBottomOf="@id/whStateSpinner"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <TextView
+            android:id="@+id/whDateText"
+            style="@style/FSTheme.Text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/text_margin"
+            android:text="@string/app_sample_text"
+            app:layout_constraintBottom_toTopOf="@id/whCalendarButton"
+            app:layout_constraintEnd_toEndOf="@id/whCalendarButton" />
+
+        <ru.flatstack.sample.ui.views.WhButton
+            android:id="@+id/whOwnerButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whStateSpinner"
+            app:textIconBtn="@string/icon_user_tie"
+            app:textTitleBtn="@string/wh_owner_button" />
+
+        <ru.flatstack.sample.ui.views.WhButton
+            android:id="@+id/whOperatorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whOwnerButton"
+            app:textIconBtn="@string/icon_truck"
+            app:textTitleBtn="@string/wh_operator_button" />
+
+        <ru.flatstack.sample.ui.views.WhButton
+            android:id="@+id/whScheduleButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whOperatorButton"
+            app:textIconBtn="@string/icon_calendar"
+            app:textTitleBtn="@string/wh_schedule_button" />
+
+        <ru.flatstack.sample.ui.views.WhButton
+            android:id="@+id/whSourceButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whScheduleButton"
+            app:textIconBtn="@string/icon_cart"
+            app:textTitleBtn="@string/wh_source_button" />
+
+        <ru.flatstack.sample.ui.views.WhButton
+            android:id="@+id/whRegionalButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/item_margin"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/whSourceButton"
+            app:textIconBtn="@string/icon_globe_europe"
+            app:textTitleBtn="@string/wh_regional_button" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

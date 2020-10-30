@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ripple xmlns:android="http://schemas.android.com/apk/res/android"
+    android:color="@color/fsPrimary">
+
+    <item>
+        <layer-list>
+
+            <item
+                android:drawable="@drawable/ic_angle_down"
+                android:gravity="end|center_vertical"
+                android:right="@dimen/spin_padding_icon" />
+
+            <item>
+                <shape android:shape="rectangle">
+                    <corners android:radius="@dimen/edit_roundness" />
+                    <stroke
+                        android:width="@dimen/edit_stoke"
+                        android:color="@color/fsGrey" />
+                </shape>
+            </item>
+
+        </layer-list>
+    </item>
+</ripple>

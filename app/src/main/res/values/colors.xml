@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- FS Colors -->
+    <color name="fsPrimary">#3CBFAD</color>
+    <color name="fsPrimaryHover">#51D3C7</color>
+    <color name="fsPrimaryLight">#B1E5DE</color>
+
+    <color name="fsDanger">#FF695B</color>
+    <color name="fsDangerHover">#F04333</color>
+    <color name="fsDangerLight">#FFDAD6</color>
+
+    <color name="fsSuccess">#3DCC79</color>
+    <color name="fsSuccessHover">#30B668</color>
+
+    <color name="fsGrey">#8D8D94</color>
+    <color name="fsGreyLight">#E6E6EB</color>
+    <color name="fsGreyLightHover">#F0F0F0</color>
+
+    <color name="fsBlack">#0C0C0F</color>
+    <color name="fsWhite">#FFFFFF</color>
+    <color name="fsTransparent">#00000000</color>
+</resources>

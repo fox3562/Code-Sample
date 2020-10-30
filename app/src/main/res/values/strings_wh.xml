@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="wh_address_button">Адрес</string>
+    <string name="wh_params_button">Характеристики</string>
+    <string name="wh_containers_button">Емкости для цветов</string>
+    <string name="wh_state_spinner">Эксплуатационный статус</string>
+    <string name="wh_owner_button">Собственник</string>
+    <string name="wh_operator_button">Оператор транспортировки</string>
+    <string name="wh_schedule_button">График вывоза</string>
+    <string name="wh_source_button">Источник цветов</string>
+    <string name="wh_regional_button">Региональный оператор</string>
+</resources>

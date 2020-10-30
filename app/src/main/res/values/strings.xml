@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Flowers</string>
+    <string name="app_sample_text">Sample Text</string>
+    <string name="app_sample_long_text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry`s standard dummy text ever since the 1500s</string>
+    <string name="app_date_template">__.__.____</string>
+
+    <string-array name="spinnerTest">
+        <item>First</item>
+        <item>Second second second second</item>
+        <item>Third</item>
+        <item>Fourth</item>
+    </string-array>
+</resources>

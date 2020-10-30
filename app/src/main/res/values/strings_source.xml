@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="source_name_edit">Наименование источника</string>
+    <string name="source_number_edit">Кадастровый номер</string>
+    <string name="source_fias_edit">Номер ФИАС</string>
+
+    <string name="source_type_spinner">Тип цветов</string>
+    <string name="source_category_spinner">Категория объекта</string>
+    <string name="source_subcategory_spinner">Подкатегория объекта</string>
+    <string name="source_unit_spinner">Тип расчетной единицы</string>
+    <string name="source_alt_unit_spinner">Тип альтернативной расчетной единицы</string>
+
+</resources>

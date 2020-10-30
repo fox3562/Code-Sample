@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".ui.params.ParamsFragment"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/paramsCoverSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/params_cover_spinner" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/paramsFenceSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/params_fence_spinner" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/paramsSidesEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/params_sides_edit" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/paramsRoofSwitch"
+            style="@style/FSTheme.Switch"
+            android:text="@string/params_roof_switch" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/paramsTypeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/params_type_spinner" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/paramsSeparatlySwitch"
+            style="@style/FSTheme.Switch"
+            android:text="@string/params_separatly_switch" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/paramsAreaSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/params_area_spinner" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/paramsStoreSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/params_store_spinner" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            style="@style/FSTheme.Flow"
+            android:orientation="horizontal"
+            app:constraint_referenced_ids="paramsCoverSpinner,
+                paramsFenceSpinner,
+                paramsSidesEdit,
+                paramsRoofSwitch,
+                paramsTypeSpinner,
+                paramsSeparatlySwitch,
+                paramsAreaSpinner,
+                paramsStoreSpinner"
+            app:flow_maxElementsWrap="1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

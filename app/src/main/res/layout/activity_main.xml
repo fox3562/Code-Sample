@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fsWhite"
+    tools:context=".ui.main.MainActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/fsWhite"
+        app:layout_constraintBottom_toBottomOf="@id/mainBackButton"
+        app:layout_constraintTop_toTopOf="@id/mainBackButton" />
+
+    <ru.flatstack.sample.ui.views.IconButton
+        android:id="@+id/mainBackButton"
+        style="@style/FSTheme.ButtonWhite"
+        android:text="@string/icon_angle_left"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        style="@style/FSTheme.TextTitle"
+        android:text="@string/app_sample_text"
+        app:layout_constraintBottom_toBottomOf="@id/mainBackButton"
+        app:layout_constraintStart_toEndOf="@id/mainBackButton"
+        app:layout_constraintTop_toTopOf="@id/mainBackButton" />
+
+    <FrameLayout
+        android:id="@+id/mainFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/mainBackButton" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

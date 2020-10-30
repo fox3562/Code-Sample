@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="params_roof_switch">Наличие навеса</string>
+    <string name="params_separatly_switch">Составные букеты</string>
+    <string name="params_cover_spinner">Тип подстилающей поверхности</string>
+    <string name="params_fence_spinner">Тип ограждения</string>
+    <string name="params_sides_edit">Количество сторон</string>
+    <string name="params_type_spinner">Тип</string>
+    <string name="params_area_spinner">Площадь</string>
+    <string name="params_store_spinner">Тип складирования</string>
+</resources>

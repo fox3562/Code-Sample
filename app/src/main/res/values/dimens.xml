@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Global -->
+    <dimen name="top_screen_padding">14dp</dimen>
+    <dimen name="screen_padding">24dp</dimen>
+    <dimen name="item_margin">14dp</dimen>
+
+    <!-- Buttons -->
+    <dimen name="button_roundness">8dp</dimen>
+    <dimen name="button_min_width">48dp</dimen>
+    <dimen name="button_padding_horizontal">@dimen/button_roundness</dimen>
+    <dimen name="button_white_roundness">24dp</dimen>
+
+    <!-- Texts -->
+    <dimen name="text_margin">4dp</dimen>
+    <dimen name="text_title_size">14sp</dimen>
+    <dimen name="text_badge_padding_horizontal">8dp</dimen>
+    <dimen name="text_badge_padding_vertical">4dp</dimen>
+    <dimen name="text_icon_size">24sp</dimen>
+
+    <!-- Edit Texts -->
+    <dimen name="edit_roundness">@dimen/button_roundness</dimen>
+    <dimen name="edit_stoke">2dp</dimen>
+    <dimen name="edit_padding_horizontal">16dp</dimen>
+    <dimen name="edit_min_height">@dimen/button_min_width</dimen>
+
+    <!-- Boxes -->
+    <dimen name="box_roundness">@dimen/button_roundness</dimen>
+    <dimen name="box_padding">18dp</dimen>
+
+    <!-- Image -->
+    <dimen name="img_size">96dp</dimen>
+    <dimen name="img_roundness">@dimen/button_roundness</dimen>
+
+    <!-- Spinner -->
+    <dimen name="spin_min_height">48dp</dimen>
+    <dimen name="spin_padding_end">36dp</dimen>
+    <dimen name="spin_padding_icon">16dp</dimen>
+
+    <!-- Switch -->
+    <dimen name="switch_roundness">4dp</dimen>
+
+    <!-- Badge -->
+    <dimen name="badge_roundness">@dimen/switch_roundness</dimen>
+</resources>

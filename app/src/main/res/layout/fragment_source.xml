@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:scrollbars="none"
+    tools:context=".ui.source.SourceFragment"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/sourceNameEdit"
+            style="@style/FSTheme.EditText"
+            android:hint="@string/source_name_edit" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/sourceTypeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/source_type_spinner" />
+
+        <EditText
+            android:id="@+id/sourceNumberEdit"
+            style="@style/FSTheme.EditText"
+            android:hint="@string/source_number_edit" />
+
+        <EditText
+            android:id="@+id/sourceFiasEdit"
+            style="@style/FSTheme.EditText"
+            android:hint="@string/source_fias_edit" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/sourceCategorySpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/source_category_spinner" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/sourceSubcategorySpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/source_subcategory_spinner" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/sourceUnitSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/source_unit_spinner" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/sourceAltUnitSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/source_alt_unit_spinner" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            style="@style/FSTheme.Flow"
+            android:orientation="horizontal"
+            app:constraint_referenced_ids="sourceNameEdit,
+            sourceTypeSpinner,
+            sourceNumberEdit,
+            sourceFiasEdit,
+            sourceCategorySpinner,
+            sourceSubcategorySpinner,
+            sourceUnitSpinner,
+            sourceAltUnitSpinner"
+            app:flow_maxElementsWrap="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

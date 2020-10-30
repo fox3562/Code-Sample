@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".ui.container.create.ContCreateFragment"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/contCreateNameEdit"
+            style="@style/FSTheme.EditText"
+            android:hint="@string/cont_create_name_edit" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/contCreateTypeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/cont_create_type_spinner" />
+
+        <ru.flatstack.sample.ui.views.WhEditNumber
+            android:id="@+id/contCreateVolumeEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleEditNumber="@string/cont_create_volume_edit" />
+
+        <ru.flatstack.sample.ui.views.WhEditNumber
+            android:id="@+id/contCreateTkoCountEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleEditNumber="@string/cont_create_tko_count_edit" />
+
+        <ru.flatstack.sample.ui.views.WhEditNumber
+            android:id="@+id/contCreateLengthEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleEditNumber="@string/cont_create_length_edit" />
+
+        <ru.flatstack.sample.ui.views.WhEditNumber
+            android:id="@+id/contCreateWidthEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleEditNumber="@string/cont_create_width_edit" />
+
+        <ru.flatstack.sample.ui.views.WhEditNumber
+            android:id="@+id/contCreateHeightEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleEditNumber="@string/cont_create_height_edit" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/contCreateContTypeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/cont_create_cont_type_spinner" />
+
+        <ru.flatstack.sample.ui.views.WhEditNumber
+            android:id="@+id/contCreateWeightEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleEditNumber="@string/cont_create_weight_edit" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/contCreateStateSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/cont_create_state_spinner" />
+
+        <ru.flatstack.sample.ui.views.WhEditDate
+            android:id="@+id/contCreateDateStartEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleDateNumber="@string/cont_create_date_start_edit" />
+
+        <ru.flatstack.sample.ui.views.WhEditDate
+            android:id="@+id/contCreateDateEndEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleDateNumber="@string/cont_create_date_end_edit" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/contCreateFlowersSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/cont_create_flowers_spinner" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/contCreateTroubleSwitch"
+            style="@style/FSTheme.Switch"
+            android:layout_width="match_parent"
+            android:text="@string/cont_create_trouble_switch" />
+
+        <EditText
+            android:id="@+id/contCreateCommentEdit"
+            style="@style/FSTheme.EditText"
+            android:layout_width="match_parent"
+            android:hint="@string/cont_create_comment_edit"
+            android:maxLines="48" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/contCreateFlow"
+            style="@style/FSTheme.Flow"
+            android:paddingBottom="@dimen/item_margin"
+            app:constraint_referenced_ids="contCreateNameEdit,
+                contCreateTypeSpinner,
+                contCreateVolumeEdit,
+                contCreateTkoCountEdit,
+                contCreateLengthEdit,
+                contCreateWidthEdit,
+                contCreateHeightEdit,
+                contCreateContTypeSpinner,
+                contCreateWeightEdit,
+                contCreateStateSpinner,
+                contCreateDateStartEdit,
+                contCreateDateEndEdit,
+                contCreateFlowersSpinner,
+                contCreateTroubleSwitch,
+                contCreateCommentEdit"
+            app:flow_maxElementsWrap="1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contCreateFilesRec"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/screen_padding"
+            android:paddingEnd="@dimen/screen_padding"
+            app:layout_constraintTop_toBottomOf="@id/contCreateFlow" />
+
+        <ru.flatstack.sample.ui.views.WhEditNumber
+            android:id="@+id/contCreateCountEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/screen_padding"
+            android:layout_marginTop="@dimen/item_margin"
+            android:layout_marginEnd="@dimen/screen_padding"
+            app:layout_constraintTop_toBottomOf="@id/contCreateFilesRec"
+            app:textTitleEditNumber="@string/cont_create_count_edit" />
+
+        <Button
+            android:id="@+id/contCreateActionButton"
+            style="@style/FSTheme.ButtonPrimary"
+            android:layout_width="match_parent"
+            android:layout_marginStart="@dimen/screen_padding"
+            android:layout_marginTop="@dimen/item_margin"
+            android:layout_marginEnd="@dimen/screen_padding"
+            android:layout_marginBottom="@dimen/screen_padding"
+            android:text="@string/cont_create_add_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contCreateCountEdit" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="WhButtonOptions">
+        <attr name="textTitleBtn" format="string" localization="suggested" />
+        <attr name="textIconBtn" format="string" localization="suggested" />
+        <attr name="textRightBtn" format="string" localization="suggested" />
+        <attr name="textLeftBtn" format="string" localization="suggested" />
+        <attr name="textTopBtn" format="string" localization="suggested" />
+    </declare-styleable>
+</resources>

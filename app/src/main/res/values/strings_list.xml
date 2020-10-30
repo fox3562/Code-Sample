@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="list_search_edit">Поиск</string>
+    <string name="list_create_button">Создать</string>
+
+</resources>

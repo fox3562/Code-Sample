@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.wh.list.WhListFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/listRec"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/item_margin"
+        app:layout_constraintBottom_toTopOf="@id/listCreateButton"
+        app:layout_constraintEnd_toEndOf="@id/listCreateButton"
+        app:layout_constraintStart_toStartOf="@id/listCreateButton"
+        app:layout_constraintTop_toBottomOf="@id/listSearchEdit" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_margin"
+        android:background="@drawable/rec_top_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/listSearchEdit" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_margin"
+        android:background="@drawable/rec_bottom_gradient"
+        app:layout_constraintBottom_toTopOf="@id/listCreateButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/listSearchEdit"
+        style="@style/FSTheme.EditText"
+        android:layout_marginStart="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/top_screen_padding"
+        android:layout_marginEnd="@dimen/item_margin"
+        android:hint="@string/list_search_edit"
+        app:layout_constraintEnd_toStartOf="@id/listSortButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ru.flatstack.sample.ui.views.IconButton
+        android:id="@+id/listSortButton"
+        style="@style/FSTheme.ButtonPrimary"
+        android:layout_marginStart="@dimen/item_margin"
+        android:layout_marginEnd="@dimen/screen_padding"
+        android:text="@string/icon_sort"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/listSearchEdit" />
+
+    <Button
+        android:id="@+id/listCreateButton"
+        style="@style/FSTheme.ButtonPrimary"
+        android:layout_marginTop="@dimen/item_margin"
+        android:layout_marginBottom="@dimen/screen_padding"
+        android:text="@string/list_create_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/listSortButton"
+        app:layout_constraintStart_toStartOf="@id/listSearchEdit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

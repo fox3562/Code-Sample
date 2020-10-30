@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="icon_sort">&#xf160;</string>
+    <string name="icon_flowers">&#xf2ed;</string>
+    <string name="icon_calendar">&#xf073;</string>
+    <string name="icon_camera">&#xf030;</string>
+    <string name="icon_angle_left">&#xf104;</string>
+    <string name="icon_map_marker">&#xf3c5;</string>
+    <string name="icon_cogs">&#xf085;</string>
+    <string name="icon_dumpster">&#xf793;</string>
+    <string name="icon_user_tie">&#xf508;</string>
+    <string name="icon_truck">&#xf0d1;</string>
+    <string name="icon_cart">&#xf07a;</string>
+    <string name="icon_globe_europe">&#xf7a2;</string>
+    <string name="icon_video">&#xf03d;</string>
+</resources>

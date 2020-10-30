@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <View
+        android:id="@+id/itemDateView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/itemDateText"
+        style="@style/FSTheme.TextTitle"
+        android:text="@string/app_sample_text"
+        app:layout_constraintStart_toStartOf="@+id/itemDateView"
+        app:layout_constraintTop_toTopOf="@+id/itemDateView" />
+
+    <EditText
+        android:id="@+id/itemDateEdit"
+        style="@style/FSTheme.EditText"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginEnd="@dimen/item_margin"
+        android:hint="@string/app_date_template"
+        android:inputType="number"
+        app:layout_constraintEnd_toStartOf="@id/itemDateButton"
+        app:layout_constraintStart_toStartOf="@id/itemDateText"
+        app:layout_constraintTop_toBottomOf="@id/itemDateText" />
+
+    <ru.flatstack.sample.ui.views.IconButton
+        android:id="@+id/itemDateButton"
+        style="@style/FSTheme.ButtonPrimary"
+        android:text="@string/icon_calendar"
+        app:layout_constraintEnd_toEndOf="@+id/itemDateView"
+        app:layout_constraintTop_toTopOf="@id/itemDateEdit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

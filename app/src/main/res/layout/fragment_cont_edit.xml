@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context=".ui.container.edit.ContEditFragment"
+    tools:ignore="MissingConstraints">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/contEditTypeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/cont_edit_type_spinner" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/contEditContTypeSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/cont_edit_cont_type_spinner" />
+
+        <ru.flatstack.sample.ui.views.WhSpinner
+            android:id="@+id/contEditStateSpinner"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:textTitleSpinner="@string/cont_edit_state_spinner" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/contEditTroubleSwitch"
+            style="@style/FSTheme.Switch"
+            android:layout_width="0dp"
+            android:text="@string/cont_create_trouble_switch" />
+
+        <EditText
+            android:id="@+id/contEditCommentEdit"
+            style="@style/FSTheme.EditText"
+            android:layout_width="0dp"
+            android:hint="@string/cont_edit_comment_edit"
+            android:maxLines="48" />
+
+        <androidx.constraintlayout.helper.widget.Flow
+            android:id="@+id/contEditFlow"
+            style="@style/FSTheme.Flow"
+            android:paddingBottom="@dimen/item_margin"
+            app:constraint_referenced_ids="contEditTypeSpinner,
+                contEditContTypeSpinner,
+                contEditStateSpinner,
+                contEditTroubleSwitch,
+                contEditCommentEdit"
+            app:flow_maxElementsWrap="1" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/contEditFilesRec"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:orientation="horizontal"
+            android:paddingStart="@dimen/screen_padding"
+            android:paddingEnd="@dimen/screen_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contEditFlow" />
+
+        <ru.flatstack.sample.ui.views.WhEditNumber
+            android:id="@+id/contEditCountEdit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/screen_padding"
+            android:layout_marginTop="@dimen/item_margin"
+            android:layout_marginEnd="@dimen/screen_padding"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contEditFilesRec"
+            app:textTitleEditNumber="@string/cont_edit_count_edit" />
+
+        <Button
+            android:id="@+id/contEditActionButton"
+            style="@style/FSTheme.ButtonPrimary"
+            android:layout_marginStart="@dimen/screen_padding"
+            android:layout_marginTop="@dimen/item_margin"
+            android:layout_marginEnd="@dimen/screen_padding"
+            android:layout_marginBottom="@dimen/screen_padding"
+            android:text="@string/cont_edit_add_button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/contEditCountEdit" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="schedule_state_spinner">Статус графика</string>
+    <string name="schedule_type_spinner">Тип графика вывоза цветов</string>
+</resources>

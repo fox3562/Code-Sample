@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.container.list.ContListFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/contListRec"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/item_margin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/contListSpinner"
+        app:layout_constraintStart_toStartOf="@id/contListSpinner"
+        app:layout_constraintTop_toBottomOf="@id/contListSpinner" />
+
+    <View
+        android:layout_width="0dp"
+        android:layout_height="@dimen/item_margin"
+        android:background="@drawable/rec_top_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/contListSpinner" />
+
+    <ru.flatstack.sample.ui.views.WhSpinner
+        android:id="@+id/contListSpinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/screen_padding"
+        android:layout_marginTop="@dimen/top_screen_padding"
+        android:layout_marginEnd="@dimen/screen_padding"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:textTitleSpinner="@string/cont_list_spinner" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

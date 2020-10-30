@@ -1,0 +1,112 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <!-- Global -->
+    <style name="FSTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="textAllCaps">false</item>
+        <item name="colorAccent">@color/fsPrimary</item>
+        <item name="android:statusBarColor" tools:targetApi="m">@color/fsWhite</item>
+        <item name="android:windowLightStatusBar" tools:targetApi="m">true</item>
+    </style>
+
+    <!-- Buttons -->
+    <style name="FSTheme.ButtonPrimary" parent="Widget.AppCompat.Button.Borderless">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/btn_primary_selector</item>
+        <item name="android:minWidth">@dimen/button_min_width</item>
+        <item name="android:paddingStart">@dimen/button_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/button_padding_horizontal</item>
+        <item name="android:textColor">@color/fsWhite</item>
+    </style>
+
+    <style name="FSTheme.ButtonDanger" parent="FSTheme.ButtonPrimary">
+        <item name="android:background">@drawable/btn_danger_selector</item>
+    </style>
+
+    <style name="FSTheme.ButtonWhite" parent="FSTheme.ButtonPrimary">
+        <item name="android:background">@drawable/btn_white_selector</item>
+        <item name="android:textColor">@color/fsBlack</item>
+    </style>
+
+    <!-- Texts -->
+    <style name="FSTheme.Text">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/fsGrey</item>
+    </style>
+
+    <style name="FSTheme.TextTitle" parent="FSTheme.Text">
+        <item name="android:textSize">@dimen/text_title_size</item>
+        <item name="android:textColor">@color/fsBlack</item>
+    </style>
+
+    <style name="FSTheme.TextBadgeSuccess" parent="FSTheme.Text">
+        <item name="android:background">@drawable/badge_success</item>
+        <item name="android:textColor">@color/fsWhite</item>
+        <item name="android:paddingStart">@dimen/text_badge_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/text_badge_padding_horizontal</item>
+        <item name="android:paddingTop">@dimen/text_badge_padding_vertical</item>
+        <item name="android:paddingBottom">@dimen/text_badge_padding_vertical</item>
+    </style>
+
+    <!-- Edit Texts -->
+    <style name="FSTheme.EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingStart">@dimen/edit_padding_horizontal</item>
+        <item name="android:paddingEnd">@dimen/edit_padding_horizontal</item>
+        <item name="android:background">@drawable/edt_bg</item>
+        <item name="android:minHeight">@dimen/edit_min_height</item>
+        <item name="android:minWidth">@dimen/edit_min_height</item>
+    </style>
+
+    <!-- Images -->
+    <style name="FSTheme.Image">
+        <item name="cornerFamily">rounded</item>
+        <item name="cornerSize">@dimen/img_roundness</item>
+        <item name="android:layout_width">@dimen/img_size</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="layout_constraintDimensionRatio">W,1:1</item>
+        <item name="srcCompat">@drawable/img_photo_example</item>
+    </style>
+
+    <!-- Boxes -->
+
+    <!-- Spinners -->
+    <style name="FSTheme.Spinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:paddingEnd">@dimen/spin_padding_end</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/spinner_bg</item>
+        <item name="android:minHeight">@dimen/spin_min_height</item>
+    </style>
+
+    <!-- Switches -->
+    <style name="FSTheme.Switch">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">@dimen/text_title_size</item>
+        <item name="android:thumb">@drawable/ic_thumb</item>
+        <item name="track">@drawable/track_bg</item>
+    </style>
+
+    <!-- Flow -->
+    <style name="FSTheme.Flow">
+        <item name="android:paddingEnd">@dimen/screen_padding</item>
+        <item name="android:paddingStart">@dimen/screen_padding</item>
+        <item name="android:paddingBottom">@dimen/screen_padding</item>
+        <item name="android:paddingTop">@dimen/top_screen_padding</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="flow_wrapMode">chain</item>
+        <item name="flow_verticalAlign">bottom</item>
+        <item name="flow_horizontalStyle">spread_inside</item>
+        <item name="flow_verticalStyle">spread_inside</item>
+        <item name="flow_horizontalGap">@dimen/item_margin</item>
+        <item name="flow_verticalGap">@dimen/item_margin</item>
+        <item name="layout_constraintEnd_toEndOf">parent</item>
+        <item name="layout_constraintStart_toStartOf">parent</item>
+        <item name="layout_constraintTop_toTopOf">parent</item>
+    </style>
+</resources>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/item_margin"
+    android:background="@drawable/box_grey_selector">
+
+    <TextView
+        android:id="@+id/itemAddressTitleText"
+        style="@style/FSTheme.TextTitle"
+        android:layout_marginStart="@dimen/box_padding"
+        android:layout_marginTop="@dimen/box_padding"
+        android:text="@string/app_sample_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/itemAddressLeftText"
+        style="@style/FSTheme.Text"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginEnd="@dimen/box_padding"
+        android:layout_marginBottom="@dimen/box_padding"
+        android:text="@string/app_sample_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/itemAddressTitleText"
+        app:layout_constraintTop_toBottomOf="@id/itemAddressTitleText" />
+
+    <TextView
+        android:id="@+id/itemAddressTopText"
+        style="@style/FSTheme.Text"
+        android:layout_marginEnd="@dimen/box_padding"
+        android:text="@string/app_sample_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/itemAddressTitleText" />
+
+    <TextView
+        android:id="@+id/itemAddressRightText"
+        style="@style/FSTheme.Text"
+        android:layout_marginTop="@dimen/text_margin"
+        android:layout_marginBottom="@dimen/box_padding"
+        android:text="@string/app_sample_text"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/itemAddressTopText"
+        app:layout_constraintTop_toBottomOf="@id/itemAddressTopText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

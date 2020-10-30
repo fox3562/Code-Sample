@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="cont_edit_type_spinner">Тим емкости</string>
+    <string name="cont_edit_cont_type_spinner">Тип контейнера</string>
+    <string name="cont_edit_state_spinner">Статус емкости</string>
+    <string name="cont_edit_comment_edit">Комментарий</string>
+    <string name="cont_edit_count_edit">Количество емкостей</string>
+    <string name="cont_edit_add_button">Добавить</string>
+</resources>
